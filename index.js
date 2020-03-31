@@ -1,6 +1,9 @@
 const { remote } = require('electron');
-
 const dialog = remote.dialog;
+
+let Mousetrap = require('mousetrap');
+
+Mousetrap.bind('esc', () => { remote.getCurrentWindow().close(); })
 
 let videoSrc = remote.process.argv[2];
 
