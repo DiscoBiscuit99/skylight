@@ -12,8 +12,6 @@ As of now, the video player can only be spawned from the command line, starting 
 
 The video player can be spawned by running `npm start [filename]` in the projects root directory. As a short term hack, I made a function in my `.bashrc` that takes the first argument passed to it, redirects to the project root directory, runs `npm start [filename]`, then redirects back to the previous working directory so one's flow isn't broken.
 
-What follows are the keybindings.
-
 ### Keybindings
 
 | Key     | Function                   |
