@@ -2,11 +2,11 @@
 
 SVP is a minimal videoplayer, kinda like mpv. It is built with the frameworks [electron](https://www.electronjs.org/) and [mousetrap](https://www.npmjs.com/package/mousetrap) for local keybindings in a browser context.
 
-## Installing the SVP
+## Installing SVP
 
 For now, installing the video player requires you to clone the repository and install the node modules. (Run `npm install --save-dev` in the project root directory.)
 
-## Operating the SVP
+## Operating SVP
 
 As of now, the video player can only be spawned from the command line, starting the application and passing it the desired video file. 
 
