@@ -17,12 +17,6 @@ function createWindow() {
 
 app.whenReady().then(createWindow);
 
-app.on('ready', () => {
-	const quit = globalShortcut.register('CommandOrControl+Q', () => {
-		win.close();
-	});
-});
-
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') {
 		app.quit();

@@ -3,7 +3,8 @@ const dialog = remote.dialog;
 
 let Mousetrap = require('mousetrap');
 
-Mousetrap.bind('esc', () => { remote.getCurrentWindow().close(); })
+Mousetrap.bind('esc', () => { remote.getCurrentWindow().close(); });
+Mousetrap.bind('q', () => { remote.getCurrentWindow().close(); });
 
 let videoSrc = remote.process.argv[2];
 
