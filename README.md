@@ -14,12 +14,14 @@ The video player can be spawned by running `npm start [filename]` in the project
 
 ### Keybindings
 
-| Key     | Function                   |
-| ------- | -------------------------- |
-| `q`     | Quit videoplayer           |
-| `f`     | Fullscreen videoplayer     |
-| `esc`   | Exit fullscreen            |
-| `right` | Video forward (5 seconds)  |
-| `left`  | Video backward (5 seconds) |
-| `.`     | Video forward (2 seconds)  |
-| `,`     | Video backward (2 seconds) |
+| Key                                              | Function                                            |
+| ------------------------------------------------ | --------------------------------------------------- |
+| `q`                                              | Quit videoplayer                                    |
+| `f`                                              | Fullscreen videoplayer                              |
+| `esc`                                            | Exit fullscreen                                     |
+| `right`                                          | Video forward (5 seconds)                           |
+| `left`                                           | Video backward (5 seconds)                          |
+| `.`                                              | Video forward (2 seconds)                           |
+| `,`                                              | Video backward (2 seconds)                          |
+| `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `0` | Skip to time in video by percentage (10% intervals) |
+
