@@ -1,7 +1,7 @@
 {
   "name": "svp",
   "version": "1.0.0",
-  "description": "Minimal videoplayer.",
+  "description": "Minimal videoplayer (Small Video Player).",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

@@ -1,11 +1,6 @@
 const { remote } = require('electron');
 const dialog = remote.dialog;
 
-let Mousetrap = require('mousetrap');
-
-Mousetrap.bind('esc', () => { remote.getCurrentWindow().close(); });
-Mousetrap.bind('q', () => { remote.getCurrentWindow().close(); });
-
 let videoSrc = remote.process.argv[2];
 
 console.log(videoSrc);
@@ -42,3 +37,43 @@ if (!video.focus) {
 	video.focus = true;
 }
 
+// Keybindings //
+
+let Mousetrap = require('mousetrap');
+
+let win = remote.getCurrentWindow();
+
+// Close the window and quit the video player.
+Mousetrap.bind('q', () => { win.close(); });
+
+// Fullscreen the video.
+Mousetrap.bind('f', () => {
+	if (video.requestFullscreen) {
+		video.requestFullscreen();
+	} else if (video.webkitRequestFullscreen) {
+		video.webkitRequestFullscreen();
+	}
+});
+
+/// Time regarding keybindings.
+
+// Go 5 seconds backward.
+Mousetrap.bind('left', () => {
+	let currentTime = video.currentTime;
+	video.currentTime = currentTime - 5;
+});
+// Go 5 seconds forward.
+Mousetrap.bind('right', () => {
+	let currentTime = video.currentTime;
+	video.currentTime = currentTime + 5;
+});
+// Go 2 seconds backward.
+Mousetrap.bind(',', () => {
+	let currentTime = video.currentTime;
+	video.currentTime = currentTime - 2;
+});
+// Go 2 seconds forward.
+Mousetrap.bind('.', () => {
+	let currentTime = video.currentTime;
+	video.currentTime = currentTime + 2;
+});
