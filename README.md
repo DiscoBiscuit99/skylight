@@ -14,7 +14,7 @@ The video player can be spawned by running `npm start [filename]` in the project
 
 ## Keybindings
 
-| Key        | Functionality    |
+| Key        | Function         |
 | ---------- | ---------------- |
 | `q`, `esc` | Quit videoplayer |
 
